@@ -72,7 +72,7 @@ def calc():
 def main():
     main_calc = input("please enter a number 1 or 2, 1=calculator, 2=geometry: ")
     while main_calc not in["1","2"]:
-          main_calc = int(input("please enter a number 1 or 2, 1=calculator, 2=geometry: "))
+          main_calc = input("please enter a number 1 or 2, 1=calculator, 2=geometry: ")
     if main_calc == "1":
          return calc()
     elif main_calc == "2":
