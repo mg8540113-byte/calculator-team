@@ -4,8 +4,7 @@ import function_file
 
 
 
-calculator = main()
-print(calculator)
+
 
 def geometry_calc():
     while True:
@@ -78,4 +77,8 @@ def main():
          return calc()
     elif main_calc == 2:
          return geometry_calc()
+
+
+calculator = main()
+print(calculator)
           
