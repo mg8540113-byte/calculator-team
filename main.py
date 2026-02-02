@@ -14,7 +14,7 @@ def geometry_calc():
                     user = int(input("please enter a number 1 - 3: "))
             if user == 1:
                 length = int(input("please enter a number length: "))
-                width = int(input("please enter a number length: "))
+                width = int(input("please enter a number width: "))
                 return geometry.rectangle(length,width)
             elif user == 2:
                 base_triangle = int(input("please enter a number base triangle: "))
@@ -25,7 +25,7 @@ def geometry_calc():
                 while user1 not in[1,2,3]:
                     user1 = int(input("please enter a number 1 - 3: "))
                 if user1 == 1:
-                     radius = int(input("please enter a number base triangle: "))
+                     radius = int(input("please enter a number of radius: "))
                      return geometry.circle_area_from_radius(radius)
                 elif user1 == 2:
                      diameter = int(input("please enter a number of diameter: "))
