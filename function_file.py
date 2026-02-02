@@ -14,3 +14,12 @@ def multiplication(a,b):
 def power(a,b):
     return a ** b
 
+def division(a,b):
+    return a / b
+
+
+def root(a):
+    return a ** 0.5
+
+def Absolute_number(a):
+    if 
