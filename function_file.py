@@ -22,4 +22,9 @@ def root(a):
     return a ** 0.5
 
 def Absolute_number(a):
-    if 
+    if a < 0:
+        return a * -1
+    else:
+        return a
+
+        
