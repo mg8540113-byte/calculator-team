@@ -13,25 +13,25 @@ def geometry_calc():
             while user not in[1,2,3]:
                     user = int(input("please enter a number 1 - 3: "))
             if user == 1:
-                length = int(input("please enter a number length: "))
-                width = int(input("please enter a number width: "))
+                length = float(input("please enter a number length: "))
+                width = float(input("please enter a number width: "))
                 return geometry.rectangle(length,width)
             elif user == 2:
-                base_triangle = int(input("please enter a number base triangle: "))
-                height_triangle = int(input("please enter a number height triangle: "))
+                base_triangle = float(input("please enter a number base triangle: "))
+                height_triangle = float(input("please enter a number height triangle: "))
                 return geometry.triangle(base_triangle,height_triangle)
             elif user == 3:
                 user1 = int(input("please enter a number 1 - 3: "))
                 while user1 not in[1,2,3]:
                     user1 = int(input("please enter a number 1 - 3: "))
                 if user1 == 1:
-                     radius = int(input("please enter a number of radius: "))
+                     radius = float(input("please enter a number of radius: "))
                      return geometry.circle_area_from_radius(radius)
                 elif user1 == 2:
-                     diameter = int(input("please enter a number of diameter: "))
+                     diameter = float(input("please enter a number of diameter: "))
                      return geometry.circle_area_from_diameter(diameter)
                 elif user1 == 3:
-                     circumference = int(input("please enter a number of circumference: "))
+                     circumference = float(input("please enter a number of circumference: "))
                      return geometry.circle_area_from_circumference(circumference)
         except ValueError:
              print("Error! the value you entered is incorrect.")
@@ -41,24 +41,24 @@ def geometry_calc():
 def calc():
     while True:
         try:
-            num1 = int(input("please enter a number: "))
-            account_operation = input("please enter account operation, add=+, sub=-, multy=*, div=/, power=** ,root=***, absolute value=-+, : ")
+            num1 = float(input("please enter a number: "))
+            account_operation = input("please enter account operation, add = +, sub = -, multy = *, div = /, power = ** ,root = ***, absolute value = -+, : ")
             while account_operation not in["+","-","*","/","**","***","-+"]:
-                account_operation = input("please enter account operation, add=+, sub=-, multy=*, div=/, power=** ,root=***, absolute value=-+, : ")
+                account_operation = input("please enter account operation, add = +, sub = -, multy = *, div = /, power = ** ,root = ***, absolute value = -+, : ")
             if account_operation == "+":
-                 num2 = int(input("please enter a number: "))
+                 num2 = float(input("please enter a number: "))
                  return function_file.add(num1,num2)
             elif account_operation == "-":
-                 num2 = int(input("please enter a number: "))
+                 num2 = float(input("please enter a number: "))
                  return function_file.subtraction(num1,num2)
             elif account_operation == "*":
-                 num2 = int(input("please enter a number: "))
+                 num2 = float(input("please enter a number: "))
                  return function_file.multiplication(num1,num2)
             elif account_operation == "/":
-                 num2 = int(input("please enter a number: "))
+                 num2 = float(input("please enter a number: "))
                  return function_file.division(num1,num2)
             elif account_operation == "**":
-                 num2 = int(input("please enter a number: "))
+                 num2 = float(input("please enter a number: "))
                  return function_file.power(num1,num2)
             elif account_operation == "***":
                  return function_file.root(num1)
