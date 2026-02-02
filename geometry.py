@@ -6,12 +6,12 @@ def rectangle(a,b):
 def triangle(a,b):
     return a*b/2
 
-def circle_radius(a):
+def circle_area_from_radius(a):
     return math.pi*(a**2)
 
-def circle_diameter(a):
+def circle_area_from_diameter(a):
     return math.pi*((a/2)**2)
 
-def circle_scope(a):
+def circle_area_from_circumference(a):
     return math.pi*((a/(math.pi*2))**2)
 
